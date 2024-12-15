@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background 0.5s ease;
+        }
+
+        canvas {
+            border: 2px solid #000;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            transition: color 0.5s ease, background-color 0.5s ease;
+        }
+
+        #gameOver {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #restartButton {
+            display: none;
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #restartButton:hover {
+            background-color: #0056b3;
+        }
+
+        #settings {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: color 0.5s ease, background-color 0.5s ease;
+        }
+
+        #themeSelect,
+        #colorPicker {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        /* Style for the link in the top left corner */
+        .top-left-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .top-left-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Link to another page in the top left corner -->
+    <a href="scratch.html" class="top-left-link">Scratch Page</a>
+
+    <h1>Snake Game</h1>
+    <button id="restartButton">Restart Game</button>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="gameOver">Game Over!</div>
+    <div id="settings">
+        <label for="colorPicker">Snake Color:</label>
+        <input type="color" id="colorPicker" value="#00ff00">
+        <label for="themeSelect">Environment:</label>
+        <select id="themeSelect">
+            <option value="jungle">Jungle</option>
+            <option value="desert">Desert</option>
+            <option value="savanna">Savanna</option>
+            <option value="water">Water</option>
+        </select>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+
