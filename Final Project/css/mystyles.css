@@ -1,0 +1,101 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Link Styling for Web Game (Left Aligned) */
+#leftLink {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#leftLink a {
+    color: #0000ff; /* Blue color for the link */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#leftLink a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for New Link Section */
+#newLinkSection {
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px; /* Padding inside the border */
+    margin-top: 30px; /* Space between other sections */
+    width: fit-content; /* Ensures the section only takes up as much space as needed */
+    text-align: left; /* Left-align text */
+}
+
+#newLinkSection h4 {
+    font-size: 16px; /* Slightly larger font for the title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #2e8b57; /* Dark green color for headings */
+}
+
+#newLinkSection a {
+    display: block; /* Each link will be on a new line */
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#newLinkSection a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Center the rest of the content */
+.content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Headings Styling */
+h1, h2, h3, h4 {
+    color: #2e8b57; /* Dark green color for headings */
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Video Section */
+iframe {
+    margin-top: 20px;
+    border: 3px solid #2e8b57; /* Green border around the video */
+    border-radius: 10px;
+}
+
+/* Adding some spacing between sections */
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #2e8b57; /* Green border for the horizontal rule */
+}
+.gym {
+    background-image: url('assets/img/background.png') imo !important; /* Adjust path based on where your image is */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100vh !important; /* Ensure it takes up the whole viewport */
+}
